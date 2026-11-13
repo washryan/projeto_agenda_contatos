@@ -1,0 +1,58 @@
+.universe-bg {
+  position: fixed;
+  inset: 0;
+  z-index: var(--z-bg);
+  pointer-events: none;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 12% 10%, rgba(227, 38, 54, 0.14), transparent 42%),
+    radial-gradient(circle at 86% 18%, rgba(40, 107, 255, 0.16), transparent 46%),
+    radial-gradient(circle at 50% 105%, rgba(40, 107, 255, 0.12), transparent 55%),
+    var(--bg-void);
+}
+
+.universe-bg__glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(72px);
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.universe-bg__glow--crimson {
+  width: min(56vw, 620px);
+  height: min(56vw, 620px);
+  top: -180px;
+  right: -120px;
+  background: radial-gradient(circle, rgba(227, 38, 54, 0.24), transparent 70%);
+}
+
+.universe-bg__glow--electric {
+  width: min(52vw, 560px);
+  height: min(52vw, 560px);
+  bottom: -180px;
+  left: -140px;
+  background: radial-gradient(circle, rgba(40, 107, 255, 0.22), transparent 70%);
+}
+
+/* Architectural spider-web / orbital coordinate grid */
+.universe-bg__web {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 78% 22%, transparent 0 180px, rgba(244, 247, 251, 0.035) 181px, transparent 182px),
+    radial-gradient(circle at 78% 22%, transparent 0 320px, rgba(40, 107, 255, 0.055) 321px, transparent 322px),
+    radial-gradient(circle at 78% 22%, transparent 0 480px, rgba(227, 38, 54, 0.045) 481px, transparent 482px),
+    linear-gradient(to right, rgba(244, 247, 251, 0.024) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(244, 247, 251, 0.024) 1px, transparent 1px);
+  background-size: auto, auto, auto, 72px 72px, 72px 72px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.35) 75%, transparent);
+}
+
+.universe-bg__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}

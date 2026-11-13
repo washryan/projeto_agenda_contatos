@@ -1,41 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Agenda de Contatos</title>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self'"
+    />
+    <meta
+      name="description"
+      content="Agenda de Contatos — Connected Universe (Ryan Leal Edition). Gerencie contatos localmente com privacidade, busca instantânea, importação/exportação segura e acessibilidade WCAG 2.2 AA."
+    />
+    <meta name="theme-color" content="#080B12" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <title>Agenda de Contatos | Ryan Leal — Connected Universe</title>
   </head>
   <body>
-    <div class="container">
-      <header>
-        <h1>Agenda de Contatos</h1>
-      </header>
-      <form id="form-contato">
-        <input
-          type="text"
-          id="nome-contato"
-          required
-          placeholder="Nome do contato"
-        />
-        <input
-          type="tel"
-          id="telefone-contato"
-          required
-          placeholder="Telefone"
-        />
-        <button type="submit">Cadastrar</button>
-      </form>
-      <table>
-        <thead>
-          <tr>
-            <th>Nome</th>
-            <th>Telefone</th>
-          </tr>
-        </thead>
-        <tbody></tbody>
-      </table>
+    <div class="universe-bg" aria-hidden="true">
+      <div class="universe-bg__glow universe-bg__glow--crimson"></div>
+      <div class="universe-bg__glow universe-bg__glow--electric"></div>
+      <div class="universe-bg__web"></div>
+      <canvas id="universe-canvas" class="universe-bg__canvas"></canvas>
     </div>
-    <script src="./script.js"></script>
+
+    <div id="app" class="app-shell"></div>
+
+    <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

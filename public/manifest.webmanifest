@@ -1,0 +1,16 @@
+{
+  "name": "Agenda de Contatos — Ryan Leal Edition",
+  "short_name": "Agenda RL",
+  "description": "Agenda de Contatos segura, acessível e local-first no conceito Connected Universe — Ryan Leal Edition.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080B12",
+  "theme_color": "#080B12",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+:root {
+  /* Core Palette — Connected Universe (Ryan Leal Edition) */
+  --bg-void: #080b12;
+  --bg-night: #101827;
+  --bg-glass: rgba(16, 24, 39, 0.78);
+  --bg-glass-strong: rgba(13, 20, 34, 0.94);
+  --bg-hover: rgba(24, 36, 58, 0.9);
+
+  --accent-crimson: #c91e2e;
+  --accent-crimson-hover: #b51827;
+  --accent-crimson-bright: #f24b59;
+  --accent-electric: #286bff;
+  --accent-electric-text: #8bb4ff;
+  --accent-emerald: #22c55e;
+  --accent-emerald-text: #6ee7b7;
+  --accent-amber: #f59e0b;
+  --accent-amber-text: #fcd34d;
+
+  --text-primary: #f4f7fb;
+  --text-secondary: #a4b2c7;
+  --text-muted: #8b9bb4;
+
+  --border-subtle: rgba(244, 247, 251, 0.11);
+  --border-strong: rgba(244, 247, 251, 0.22);
+  --border-crimson: rgba(227, 38, 54, 0.48);
+  --border-electric: rgba(40, 107, 255, 0.45);
+
+  /* Typography */
+  --font-display: 'Oswald', system-ui, -apple-system, sans-serif;
+  --font-sans: 'Manrope', system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-mono: 'Fira Code', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Radii & Shadows */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 9999px;
+
+  --shadow-card: 0 12px 32px -12px rgba(0, 0, 0, 0.65);
+  --shadow-modal: 0 24px 64px -12px rgba(0, 0, 0, 0.85);
+  --focus-ring: 0 0 0 3px rgba(40, 107, 255, 0.55);
+
+  /* Transitions */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 150ms;
+  --dur-normal: 220ms;
+
+  /* Z-layers */
+  --z-bg: 0;
+  --z-app: 1;
+  --z-header: 20;
+  --z-modal: 50;
+  --z-toast: 60;
+}
